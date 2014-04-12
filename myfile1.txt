@@ -1,0 +1,106 @@
+>>> line = "From Oct, 2013 to Mar, 2014"
+>>> line = line.atrip()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'str' object has no attribute 'atrip'
+>>> line = line.strip()
+>>> line
+'From Oct, 2013 to Mar, 2014'
+>>> line.split("to")
+['From Oct, 2013 ', ' Mar, 2014']
+>>> len(line)
+27
+>>> line_list = line.split("to")
+>>> len(line_list)
+2
+>>> line[5:]
+'Oct, 2013 to Mar, 2014'
+>>> linr = line[5:]
+>>> line_list = linr.split("to")
+>>> line_list
+['Oct, 2013 ', ' Mar, 2014']
+>>> lin1_list[0]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lin1_list' is not defined
+>>> line_list[0]
+'Oct, 2013 '
+>>> line_list[0].split(",")[0]
+'Oct'
+>>> my_month = ["Jan", "Feb", "Mar", "Apr",  "May", "Jun", "Jul", Aug", "Sep", "oct", "Nov", "Dec"]
+  File "<stdin>", line 1
+    my_month = ["Jan", "Feb", "Mar", "Apr",  "May", "Jun", "Jul", Aug", "Sep", "oct", "Nov", "Dec"]
+                                                                        ^
+SyntaxError: invalid syntax
+>>> my_month = ["Jan", "Feb", "Mar", "Apr",  "May", "Jun", "Jul", "Aug", "Sep", "oct", "Nov", "Dec"]
+>>> if line_list[0].split(",")[0]  in my_month:
+...     
+KeyboardInterrupt
+>>> my_month = {"Jan": 01, "Feb": 02, "Mar": 03, "Apr": 04,  "May": 05, "Jun": 06, "Jul": 07, "Aug": 08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+  File "<stdin>", line 1
+    my_month = {"Jan": 01, "Feb": 02, "Mar": 03, "Apr": 04,  "May": 05, "Jun": 06, "Jul": 07, "Aug": 08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+                                                                                                      ^
+SyntaxError: invalid token
+>>> my_month = {"Jan": 01, "Feb": 02, "Mar": 03, "Apr": 04,  "May": 05, "Jun": 06, "Jul": 07, "Aug": 08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+  File "<stdin>", line 1
+    my_month = {"Jan": 01, "Feb": 02, "Mar": 03, "Apr": 04,  "May": 05, "Jun": 06, "Jul": 07, "Aug": 08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+                                                                                                      ^
+SyntaxError: invalid token
+>>> 
+>>> 
+>>> 
+>>> my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+  File "<stdin>", line 1
+    my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+                                                                                              ^
+SyntaxError: invalid token
+>>> 
+>>> 
+>>> 
+>>> 
+>>> 
+>>> my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+  File "<stdin>", line 1
+    my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":08, "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+                                                                                              ^
+SyntaxError: invalid token
+>>> my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":"08", "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+  File "<stdin>", line 1
+    my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":"08", "Sep":09 , "oct":10, "Nov":11, "Dec":12}
+                                                                                                          ^
+SyntaxError: invalid token
+>>> my_month = {"Jan":01, "Feb":02, "Mar":03, "Apr":04,  "May":05, "Jun":06, "Jul":07, "Aug":"08", "Sep":"09" , "oct":10, "Nov":11, "Dec":12}
+>>> my_month = {"Jan":"01", "Feb":"02", "Mar":"03", "Apr":"04", "May":"05", "Jun":"06", "Jul":"07", "Aug":"08", "Sep":"09" , "oct":"10", "Nov":"11", "Dec":"12"}
+>>> if line_list[0].split(",")[0]  in my_month.keys():
+...     my_month[line_list[0].split(",")[0]]
+...     print my_month[line_list[0].split(",")[0]]
+... 
+>>> my_month = {"Jan":"01", "Feb":"02", "Mar":"03", "Apr":"04", "May":"05", "Jun":"06", "Jul":"07", "Aug":"08", "Sep":"09" , "Oct":"10", "Nov":"11", "Dec":"12"}
+>>> if line_list[0].split(",")[0]  in my_month.keys():...     print my_month[line_list[0].split(",")[0]]... 
+10
+>>> print my_month[line_list[0].split(",")[1]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: ' 2013 '
+>>> print line_list[0].split(",")[1]
+ 2013 
+>>> print my_month[line_list[1].split(",")[0]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: ' Mar'
+>>> print my_month[line_list[0].split(",")[1]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: ' 2013 '
+>>> print line_list[0].split(",")[1]
+ 2013 
+>>> print my_month[line_list[1].split(",")[0]]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: ' Mar'
+>>> print line_list[1].split(",")[0]
+ Mar
+>>> print my_month[line_list[1].split(",")[0].strip()]
+03
+>>> 
+
